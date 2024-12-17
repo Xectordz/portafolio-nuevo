@@ -1,0 +1,75 @@
+body{
+  font-family: "Archivo", sans-serif;
+  background-color: var(--bg);
+  color: var(--text-color);
+}
+p{
+  margin: 0;
+}
+:root {
+  --bg: rgb(219, 219, 219);
+  --text-color: #111625;
+  --bg-semidark: #341931;
+  --bg-medio: #571b3c;
+  --bg-semi-claro: #7a1e48;
+  --bg-claro: #9d2053;
+}
+
+body.dark-mode{
+  --bg: #111625;
+  --text-color: #e4e4e4;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el tamaño total */
+}
+/* Restablecer encabezados (h1 - h6) */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; /* Evita tamaños de fuente predeterminados */
+  font-weight: normal;
+  margin: 0; /* Eliminar márgenes predeterminados */
+}
+
+/* Eliminar los estilos de las listas */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Eliminar subrayado y el color predeterminado de los enlaces */
+a {
+  text-decoration: none;
+  color: inherit; /* Los enlaces heredarán el color del texto */
+}
+
+/* Restablecer los estilos de las tablas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%; /* Hace que las imágenes no se desborden */
+  height: auto;
+}
+
+/* Restablecer los campos de formulario */
+input, textarea, button, select {
+  font: inherit; /* Hereda la fuente de su entorno */
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin: 0 1rem;
+  max-width: 1000px;
+}
+@media(min-width:768px){
+  .container{
+    margin: 0 auto;
+  }
+}

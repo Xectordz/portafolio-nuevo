@@ -1,0 +1,12 @@
+.saludo{
+    font-size:xx-large;
+    text-align: center;
+    margin: 10rem auto 0 auto;
+}
+@media (min-width: 768px) {
+    .saludo{
+        margin-top: 13rem;
+        max-width: 60%;
+        font-size: 2.5rem;
+    }
+}
